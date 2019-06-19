@@ -1,4 +1,4 @@
-##ASP.NET MVC en Net Core vs Net Classic.
+# ASP.NET MVC en Net Core vs Net Classic.
 
 Comparar las diferencias principales diferencias en ASP.NET MVC al implementar una aplicación web en net core versus net classic.
 
