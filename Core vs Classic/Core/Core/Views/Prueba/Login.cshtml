@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model Core.Models.Usuario
+
+<h1>TPi-Asp.net Classic MVC vs Asp.net Core MVC</h1>
+<div class="main-agile">
+
+    <div class="content-wthree">
+        <div class="about-middle">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="banner-bottom-2">
+                                <div class="about-midd-main">
+                                    <img class="agile-img" src="~/images/t1.jpg" alt=" " class="img-responsive">
+                                </div>
+                                <div class="new-account-form">
+                                    <h2 class="heading-w3-agile">Login</h2>
+                                    <form action="~/Prueba/ValidarUsuario" method="post">
+                                        <div class="inputs-w3ls">
+                                            <p>Email</p>
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <input type="email" class="email" name="Email" placeholder="" required="">
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="inputs-w3ls">
+                                            <p>Password</p>
+                                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                            <input type="password" class="password" name="Password" placeholder="" required="">
+                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                        <label class="anim">
+                                            <input type="checkbox" class="checkbox">
+                                            <span>Recordarme</span>
+                                            <a href="#">Olvide mi contraseña</a>
+                                        </label>
+                                        <input type="submit" value="Login">
+                                    </form>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"> </div>
+            </section>
+        </div>
+    </div>
+</div>
